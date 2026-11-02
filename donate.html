@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate Food | Food Rescue Connect</title><link rel="stylesheet" href="css/style.css">
+<script defer src="js/storage.js"></script><script defer src="js/common.js"></script><script defer src="js/donations.js"></script></head>
+<body><header id="site-header"></header><main class="container section"><div class="section-heading"><span class="eyebrow">MAKE A DIFFERENCE</span><h1>List a food donation</h1><p>Provide accurate details so an NGO can assess and collect the food safely.</p></div>
+<div class="form-card"><form id="donation-form"><div class="form-grid">
+<div><label for="food-name">Food name</label><input id="food-name" required maxlength="100" placeholder="e.g. Vegetable rice"></div>
+<div><label for="food-category">Category</label><select id="food-category" required><option value="">Choose category</option><option>Cooked Meals</option><option>Vegetables</option><option>Fruits</option><option>Bakery</option><option>Packaged Food</option><option>Dairy</option><option>Other</option></select></div>
+<div><label for="food-quantity">Quantity</label><input id="food-quantity" type="number" min="0.1" step="0.1" required></div>
+<div><label for="food-unit">Unit</label><select id="food-unit"><option value="kg">Kilograms</option><option value="meals">Meals</option><option value="packs">Packs</option><option value="boxes">Boxes</option></select></div>
+<div><label for="food-prepared">Preparation date and time</label><input id="food-prepared" type="datetime-local" required></div>
+<div><label for="food-deadline">Collection deadline</label><input id="food-deadline" type="datetime-local" required></div>
+<div><label for="food-location">Pickup location</label><input id="food-location" required maxlength="150"></div>
+<div><label for="food-donor">Donor name</label><input id="food-donor" required maxlength="80"></div>
+<div><label for="food-storage">Storage instructions</label><input id="food-storage" required maxlength="200" placeholder="e.g. Keep refrigerated"></div>
+<div><label for="food-packaging">Packaging information</label><input id="food-packaging" required maxlength="200" placeholder="e.g. Sealed containers"></div>
+</div><label for="food-image">Optional food image preview (not uploaded)</label><input id="food-image" type="file" accept="image/*">
+<img id="food-preview" class="image-preview hidden" alt="Selected food preview"><p class="muted">Image is previewed only and is not saved to a server.</p>
+<button class="btn" type="submit">Publish Donation</button><p id="donation-message" class="form-message" role="status"></p></form></div></main><footer id="site-footer"></footer></body></html>

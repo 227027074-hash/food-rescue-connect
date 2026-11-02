@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register | Food Rescue Connect</title><link rel="stylesheet" href="css/style.css">
+<script defer src="js/storage.js"></script><script defer src="js/common.js"></script><script defer src="js/auth.js"></script></head>
+<body><header id="site-header"></header><main class="container section narrow"><div class="form-card">
+<span class="eyebrow">JOIN THE COMMUNITY</span><h1>Create an account</h1><p>Register a demo Donor or NGO account.</p>
+<form id="register-form"><label for="reg-name">Full name / contact person</label><input id="reg-name" required minlength="2" maxlength="80">
+<label for="reg-email">Email</label><input id="reg-email" type="email" required>
+<label for="reg-phone">Phone number</label><input id="reg-phone" type="tel" pattern="[0-9+() -]{7,20}" required>
+<label for="reg-role">Account type</label><select id="reg-role" required><option value="">Select account type</option><option>Donor</option><option>NGO</option></select>
+<label for="reg-organisation">Organisation name (optional)</label><input id="reg-organisation" maxlength="100">
+<label for="reg-location">Location</label><input id="reg-location" required maxlength="120" placeholder="e.g. Kumbakonam">
+<label for="reg-password">Demo password</label><input id="reg-password" type="password" minlength="6" required>
+<button class="btn full" type="submit">Create Account</button><p id="register-message" class="form-message" role="status"></p></form>
+<p>Already registered? <a href="login.html">Login</a></p></div></main><footer id="site-footer"></footer></body></html>

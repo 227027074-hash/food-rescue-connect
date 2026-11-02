@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Available Food | Food Rescue Connect</title><link rel="stylesheet" href="css/style.css">
+<script defer src="js/storage.js"></script><script defer src="js/common.js"></script><script defer src="js/requests.js"></script><script defer src="js/matching.js"></script></head>
+<body><header id="site-header"></header><main class="container section"><div class="section-heading"><span class="eyebrow">RESCUE SURPLUS FOOD</span><h1>Available food listings</h1><p>Search donations and find suitable pickup opportunities.</p></div>
+<div class="filters"><div><label for="search-food">Food or location</label><input id="search-food" placeholder="Search listings..."></div>
+<div><label for="filter-category">Category</label><select id="filter-category"><option value="">All categories</option><option>Cooked Meals</option><option>Vegetables</option><option>Fruits</option><option>Bakery</option><option>Packaged Food</option><option>Dairy</option><option>Other</option></select></div>
+<div><label for="filter-status">Status</label><select id="filter-status"><option value="Available">Available</option><option value="">All statuses</option><option>Requested</option><option>Reserved</option><option>Completed</option><option>Expired</option></select></div>
+<div><label for="sort-deadline">Sort by</label><select id="sort-deadline"><option value="asc">Soonest deadline</option><option value="desc">Latest deadline</option></select></div></div>
+<p id="listing-summary" class="muted"></p><div id="food-list" class="card-grid three"></div><p id="listing-empty" class="empty-state hidden">No listings match your search. Try another keyword or filter.</p></main><footer id="site-footer"></footer></body></html>

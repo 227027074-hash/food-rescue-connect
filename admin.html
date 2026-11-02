@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Dashboard | Food Rescue Connect</title><link rel="stylesheet" href="css/style.css">
+<script defer src="js/storage.js"></script><script defer src="js/common.js"></script><script defer src="js/admin.js"></script></head>
+<body><header id="site-header"></header><main class="container section"><div class="section-heading"><span class="eyebrow">SYSTEM OVERVIEW</span><h1>Admin dashboard</h1><p>Monitor demo data, manage listings and export donation records.</p></div>
+<div class="notice">Demo administrator access only. This page is not protected by secure server-side permissions.</div>
+<div id="admin-stats" class="stats-grid"></div><section class="section"><div class="section-heading"><h2>Category statistics</h2></div><div id="category-stats" class="card-grid three"></div></section>
+<section class="section"><div class="section-heading"><h2>Manage donations</h2></div><div class="filters"><div><label for="admin-search">Search food or location</label><input id="admin-search" placeholder="Search..."></div><div><label for="admin-status">Filter status</label><select id="admin-status"><option value="">All statuses</option><option>Available</option><option>Requested</option><option>Reserved</option><option>Completed</option><option>Expired</option></select></div></div>
+<div class="actions"><button class="btn" id="export-csv" type="button">Export donations CSV</button><button class="btn btn-outline" id="refresh-admin" type="button">Refresh data</button></div>
+<div id="admin-donations" class="table-wrap"></div></section><p id="admin-message" class="form-message" role="status"></p></main><footer id="site-footer"></footer></body></html>
